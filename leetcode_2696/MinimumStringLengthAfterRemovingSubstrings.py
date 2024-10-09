@@ -1,5 +1,5 @@
 class MinimumStringLengthAfterRemovingSubstrings:
-    def minLength(self, s: str) -> int:
+    def min_length(self, s: str) -> int:
         stack = []
         for c in s:
             if not stack:
@@ -12,10 +12,12 @@ class MinimumStringLengthAfterRemovingSubstrings:
             else:
                 stack.append(c)
         return len(stack)
-    
-def main ():
-        main_instance = MinimumStringLengthAfterRemovingSubstrings()
-        print(main_instance.minLength("ABFCACDB"))
-    
+
+
+def main():
+    main_instance = MinimumStringLengthAfterRemovingSubstrings()
+    print(main_instance.min_length("ABFCACDB"))
+
+
 if __name__ == "__main__":
     main()

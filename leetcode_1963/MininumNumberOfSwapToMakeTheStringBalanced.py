@@ -1,6 +1,6 @@
 class MinimumNumberOfSwapToMakeTheStringBalanced:
     # Solution 1
-    def minSwaps(self, s: str) -> int:
+    def min_swaps(self, s: str) -> int:
         count = 0
         for c in s:
             if c == '[':
@@ -8,7 +8,7 @@ class MinimumNumberOfSwapToMakeTheStringBalanced:
             elif count > 0:
                 count -= 1
         return (count + 1) // 2
-    
+
     # Solution 2
     # def minSwaps(self, s: str) -> int:
     #     closeBracket, count = 0, 0
@@ -19,11 +19,12 @@ class MinimumNumberOfSwapToMakeTheStringBalanced:
     #             closeBracket += 1
     #         count = max(count, closeBracket)
     #     return  (count + 1) // 2
-        
-    
+
+
 def main():
     main_instance = MinimumNumberOfSwapToMakeTheStringBalanced()
-    print(main_instance.minSwaps("][]["))
-    
+    print(main_instance.min_swaps("][]["))
+
+
 if __name__ == "__main__":
     main()
