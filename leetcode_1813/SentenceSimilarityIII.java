@@ -1,3 +1,5 @@
+package leetcode_1813;
+
 class SentenceSimilarityIII {
     public boolean areSentencesSimilar(String sentence1, String sentence2) {
         String[] words1 = splitWords(sentence1);
