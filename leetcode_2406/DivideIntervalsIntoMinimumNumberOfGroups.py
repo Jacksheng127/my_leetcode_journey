@@ -1,5 +1,5 @@
 class DivideIntervalsIntoMinimumNumberOfGroups:
-    def minNumberOfGroups(self, intervals: list[list[int]]) -> int:
+    def min_number_of_groups(self, intervals: list[list[int]]) -> int:
         start, end = [], []
         for left, right in intervals:
             start.append(left)
@@ -31,7 +31,7 @@ class DivideIntervalsIntoMinimumNumberOfGroups:
 
 def main():
     main_instance = DivideIntervalsIntoMinimumNumberOfGroups()
-    print(main_instance.minNumberOfGroups([[5, 10], [6, 8], [1, 5], [2, 3], [1, 10]]))
+    print(main_instance.min_number_of_groups([[5, 10], [6, 8], [1, 5], [2, 3], [1, 10]]))
 
 
 if __name__ == "__main__":
