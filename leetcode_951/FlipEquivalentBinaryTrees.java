@@ -1,5 +1,7 @@
 package leetcode_951;
 
+import data_structure.TreeNode;
+
 class FlipEquivalentBinaryTrees{
     public boolean flipEquiv(TreeNode root1, TreeNode root2) {
         return checker(root1, root2);
