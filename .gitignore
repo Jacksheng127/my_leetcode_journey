@@ -1,2 +1,5 @@
 # To ignore all .class files 
 *.class
+
+# To ignore all .DS_Store files
+*.DS_Store
