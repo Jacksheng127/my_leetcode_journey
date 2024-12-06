@@ -1,0 +1,36 @@
+package leetcode_2554;
+
+class MaximumNumberOfIntegerToChooseFromARangeI{
+    public int maxCount(int[] banned, int n, int maxSum) {
+        int [] arr = new int [10001];
+        for(int i=0; i<banned.length; i++)
+        {
+            arr[banned[i]] = 1;
+        }
+
+        long sum = 0;
+        int count = 0;
+        for(int i=1; i<=n; i++)
+        {
+            if(arr[i] == i)
+            {
+                continue;
+            }
+            sum += i;
+            if(sum > maxSum)
+            {
+                break;
+            }
+            count++;
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        MaximumNumberOfIntegerToChooseFromARangeI obj = new MaximumNumberOfIntegerToChooseFromARangeI();
+        int [] banned = {1, 6, 5};
+        int n = 5;
+        int maxSum = 6;
+        System.out.println(obj.maxCount(banned, n, maxSum));
+    }
+}
