@@ -1,4 +1,4 @@
-package leecode_2460;
+package leetcode_2460;
 
 class ApplyOperationsToAnArray {
     public int[] applyOperations(int[] nums) {
